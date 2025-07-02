@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Vision - かっこいいトップページ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">FUTURE VISION</div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">ホーム</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">アバウト</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">サービス</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">コンタクト</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">未来を</span>
+                    <span class="title-line">デザインする</span>
+                </h1>
+                <p class="hero-subtitle">革新的なテクノロジーで世界を変える</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">始める</button>
+                    <button class="btn btn-secondary">詳しく見る</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-element" style="--delay: 0s"></div>
+                    <div class="floating-element" style="--delay: 1s"></div>
+                    <div class="floating-element" style="--delay: 2s"></div>
+                    <div class="floating-element" style="--delay: 3s"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">革新への道のり</h2>
+                <p class="section-subtitle">テクノロジーと創造性の融合</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>革新性</h3>
+                    <p>最先端のテクノロジーを活用し、従来の枠を超えたソリューションを提供します。</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>スピード</h3>
+                    <p>迅速な開発サイクルで、アイデアを素早く現実に変換します。</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>精密性</h3>
+                    <p>細部にまでこだわり、完璧な品質を追求します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">サービス</h2>
+                <p class="section-subtitle">あなたのビジョンを実現する</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-number">01</div>
+                    <h3>Webデザイン</h3>
+                    <p>ユーザー体験を重視した美しく機能的なWebサイトを制作</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">02</div>
+                    <h3>アプリ開発</h3>
+                    <p>モバイルからデスクトップまで、あらゆるプラットフォームに対応</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">03</div>
+                    <h3>AIソリューション</h3>
+                    <p>機械学習とAIを活用した革新的なソリューション</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">04</div>
+                    <h3>コンサルティング</h3>
+                    <p>戦略的なテクノロジー導入のサポート</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-subtitle">プロジェクトを始めましょう</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>info@futurevision.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <p>+81 3-1234-5678</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Address</h4>
+                        <p>東京都渋谷区 1-2-3</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="お名前" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="メールアドレス" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="メッセージ" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">送信</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">FUTURE VISION</div>
+                <p>&copy; 2024 Future Vision. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
