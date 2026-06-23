@@ -1,0 +1,43 @@
+# News digest sources.
+#
+# 各ソースは独立に取得され、1つが失敗しても他は処理されます（失敗はログに残るだけ）。
+# フィードURLは差し替え可能です。"verified: false" のものは未裏取りなので、
+# 初回 dry-run のログ（どのフィードが解決したか）を見て確定させてください。
+
+timezone: Asia/Tokyo
+
+mail:
+  subject_prefix: "[Silicon Digest]"
+  # 1回のダイジェストに載せる新着の最大件数（ソース横断の合計）。
+  max_items: 60
+
+sources:
+  - id: zerotoasic
+    name: "Zero to ASIC ブログ"
+    type: rss
+    url: https://www.zerotoasiccourse.com/blog/rss.xml
+    verified: false   # /blog/rss.xml 系。dry-run ログで解決を確認のこと
+
+  - id: electronicsweekly
+    name: "Electronics Weekly"
+    type: rss
+    url: https://www.electronicsweekly.com/feed/
+    verified: false   # WordPress。カテゴリ別は .../news/feed/ などに差し替え可
+
+  - id: hackster_news
+    name: "Hackster.io News"
+    type: rss
+    url: https://www.hackster.io/news.atom
+    verified: false   # 要確認。タグ別RSSが取れれば silicon / open-source に絞る
+
+  - id: fossi_github
+    name: "FOSSi Foundation (GitHub activity)"
+    type: rss
+    url: https://github.com/fossi-foundation.atom
+    verified: true    # GitHub org の公開Atom。最も堅い
+
+  - id: tinytapeout_chips
+    name: "Tiny Tapeout シャトル一覧"
+    type: html_table
+    url: https://tinytapeout.com/chips/
+    verified: true    # RSSなし → 表をスクレイプして差分検知
