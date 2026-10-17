@@ -42,3 +42,4 @@ jobs:
           claude_args: |
             --max-turns 10
             --allowedTools "Read,Glob,Grep,Edit,Bash(git diff:*),Bash(git status:*)"
+            --disallowedTools "Bash(git push:*),Bash(git rm:*)"
