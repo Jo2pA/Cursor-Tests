@@ -36,7 +36,8 @@ jobs:
       - name: Run Claude Code
         uses: anthropics/claude-code-action@f27be6b65a4652f08a2ba3cff79114829b588967 # v1.0.252
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # サブスク(Claude Pro)のトークンを使う。従量課金APIキーは使わない。
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           # id-token は付けない。上の job permissions に束縛されたトークンを渡す。
           github_token: ${{ secrets.GITHUB_TOKEN }}
           claude_args: |
